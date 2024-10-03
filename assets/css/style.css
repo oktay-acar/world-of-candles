@@ -1,0 +1,136 @@
+body {
+  background: #1b2631;
+  color: #d0d3d4;
+  font-family: "Poppins", sans-serif;
+  padding: 65px 0 65px;
+}
+
+/* ------- NAVBAR ------- */
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#mainNavbar .navbar-brand {
+  color: #bb8fce;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+#mainNavbar .nav-link {
+  color: #d0d3d4;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #bb8fce;
+}
+
+#mainNavbar .nav-link:active {
+  color: white;
+}
+
+.navbar.scrolled {
+  background: #34495e;
+  transition: background 750ms;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  background: #bb8fce;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* ------- SECTION ------- */
+#headingGroup span {
+  color: #bb8fce;
+}
+
+#headingGroup h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.blurb h2 {
+  color: #bb8fce;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.blurb p {
+  font-size: 1.15rem;
+  font-weight: 200;
+  line-height: 2;
+  font-style: italic;
+}
+
+/* ------- FOOTER ------- */
+footer {
+  background: #34495e;
+}
+
+footer h3 {
+  font-size: 1.15rem;
+}
+
+footer .myName {
+  color: #bb8fce;
+}
+
+/* ------- MEDIA QUARIES ------- */
+@media (max-width: 992px) {
+  #headingGroup h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  .blurb h2 {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .blurb p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {
+  #mainNavbar .nav-link {
+    color: white;
+  }
+
+  #mainNavbar .nav-link:hover {
+    color: black;
+  }
+
+  #mainNavbar .nav-link:active {
+    color: white;
+  }
+
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background: black;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s;
+  }
+}
